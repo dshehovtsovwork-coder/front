@@ -85,6 +85,7 @@
  }
 
 .container{
+	/*position: relative;*/
 	width: 95%;
 	margin: 20px auto;
 	border-radius: 15px;
@@ -178,6 +179,8 @@
 
 .preview img{
 	width: 100%;
+	filter: grayscale(100%);
+	transition: .4s;
 }
 
 .buttons{
@@ -210,4 +213,119 @@
 	background: green;
 	grid-row: 3/4;
 	grid-column: 3/4;
+}
+
+
+/*.absolute{
+	position: absolute;
+	border-radius: 20%;
+	background: red;
+	width: 200px;
+	height: 200px;
+	top: 800px;
+}
+
+.circle{
+	background: white;
+	border-radius: 50%;
+	z-index: 5;
+	left: 100px;
+}*/
+
+body{
+	height: 2000px;
+}
+
+.smile{
+	position: absolute;
+}
+
+.shape{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	background: yellow;
+	border-radius: 100%;
+	transition: 0.4s;
+}
+
+.eyes{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	height: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 4;
+}
+
+.eye{
+	background: black;
+	height: 100%;
+	width: 25%;
+	border-radius: 50%;
+}
+
+.mouth{
+	position: absolute;
+	background: red;
+	bottom: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50%;
+	height: 50%;
+	border-radius: 100%;
+}
+
+.hider{
+	height: 50%;
+	background: yellow;
+}
+
+.tooth{
+	position: absolute;
+	background: white;
+	height: 10%;
+	width: 100%;
+	top: 50%;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+/*hover active visited*/
+.shape:hover{
+	height: 500px;
+	width: 500px;
+}
+
+.shape:active{
+	background: blue;
+}
+
+.preview>img:hover{
+	filter: grayscale(0%);
+	/*filter: brightness(10000);*/
+	/*filter: contrast(1000);*/
+	filter: hue-rotate(310deg);
+	filter: opacity(.9);
+	/*filter: saturate(30%);*/
+	/*filter: sepia(90%);*/
+	/*filter: drop-shadow(16px 16px 20px blue);*/
+}
+.nav a{
+	transition: .4s;
+}
+
+.nav a:hover{
+	font-size: 2em;
+}
+
+.actionBar a img{
+	transition: .4s;
+}
+
+.actionBar a img:hover{
+	transform: scale(1.3);
 }
