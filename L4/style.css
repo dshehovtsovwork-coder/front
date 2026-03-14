@@ -499,3 +499,221 @@ body{
 	height: 70%;
 	border-radius: 5px;
 }
+
+
+
+
+/* ---------- PAGE BACKGROUND ---------- */
+
+body{
+    background: linear-gradient(180deg,#9fd0f2 0%,#eaf6ff 40%,#cfe9ff 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grid {
+    margin-top: 50px;
+}
+
+/* ---------- HEADER IMPROVEMENT ---------- */
+
+.header{
+    background: linear-gradient(180deg,#e6f4ff 0%,#a8d3f3 60%,#7fb7df 100%);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* ---------- NAVIGATION ANIMATION ---------- */
+
+.nav a{
+    position: relative;
+    color:#1d4c7a;
+    font-weight:600;
+}
+
+.nav a:hover{
+    font-size: 28px; /* отменяем старый эффект */
+    transform: translateY(-3px);
+}
+
+/* underline animation */
+
+.nav a::after{
+    content:"";
+    position:absolute;
+    bottom:-5px;
+    left:0;
+    width:0%;
+    height:3px;
+    background:#2c79c2;
+    transition:.4s;
+}
+
+.nav a:hover::after{
+    width:100%;
+}
+
+
+/* ---------- PRODUCT CARD ---------- */
+
+.product{
+    background: linear-gradient(180deg,#f7fbff,#dcefff);
+    border-radius:15px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* ---------- PREVIEW ---------- */
+
+.preview{
+    background: linear-gradient(180deg,#cfe9ff,#eaf6ff);
+    border-radius:15px;
+}
+
+.preview img{
+    border-radius:10px;
+}
+
+/* ---------- ICON BUTTONS ---------- */
+
+.buttons a{
+    background:white;
+    border-radius:15px;
+    padding:10px;
+    transition:.3s;
+}
+
+.buttons a:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+/* ---------- PRODUCT INFO ---------- */
+
+.info{
+    background:linear-gradient(180deg,#ffffff,#eef7ff);
+    border-radius:15px;
+}
+
+.title span{
+    color:#1b6fbf;
+    font-weight:700;
+}
+
+/* ---------- ADD TO CART BUTTON ---------- */
+
+.add_btn{
+    background: linear-gradient(180deg,#4da3ff,#1d6ed8);
+    border:none;
+    padding:10px 60px;
+    transition:.3s;
+}
+
+.add_btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* ---------- FEATURES ---------- */
+
+.features span{
+    background:#f0f7ff;
+    padding:8px 12px;
+    border-radius:8px;
+    font-size:18px;
+}
+
+/* ---------- DETAILS BOX ---------- */
+
+.details{
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.switch a{
+    background:#d6e9f8;
+}
+
+.switch .active{
+    background:white;
+}
+
+
+/* ---------- RELATED PRODUCTS ---------- */
+
+.ad, .also{
+    background: linear-gradient(180deg,#ffffff,#eef7ff);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.related_product{
+    background:white;
+    padding:10px;
+    transition:.3s;
+}
+
+.related_product:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 25px rgba(0,0,0,0.2);
+}
+
+.related_product h3{
+    font-size:16px;
+}
+
+.related_product span{
+    color:#1d6ed8;
+    font-weight:600;
+}
+
+/* ---------- CONTAINER SHADOW ---------- */
+
+.container{
+    background: linear-gradient(180deg,#eaf6ff 0%,#cfe9ff 100%);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+    overflow: hidden;
+}
+
+
+/* ---------- FEATURE BUTTONS PANEL ---------- */
+
+.buttons{
+    background: linear-gradient(180deg,#f4f9ff 0%,#dceeff 100%);
+    border-radius: 12px;
+    padding: 25px 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.buttons a{
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.buttons a:last-child{
+    border-right: none;
+}
+
+.buttons a img{
+    width: 55px;
+    height: 55px;
+}
+
+.buttons a p{
+    font-size: 16px;
+    font-weight: 600;
+    color:#2a5c8f;
+    text-align: center;
+}
+
+
+/* ---------- HOVER EFFECT ---------- */
+
+.buttons a{
+    transition: all .3s ease;
+}
+
+.buttons a:hover{
+    transform: translateY(-4px);
+}
